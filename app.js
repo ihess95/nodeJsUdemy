@@ -1,9 +1,4 @@
 const http = require("http");
-const fs = require("fs");
-const { resourceLimits } = require("worker_threads");
 
-const server = http.createServer((req, res) => {
-  const url = req.url;
-  const method = req.method;
-});
+const server = http.createServer((req, res) => {});
 server.listen(3000);
