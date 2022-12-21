@@ -31,10 +31,11 @@ const requestHandler = (req, res) => {
       const parsedList = Buffer.concat(userList).toString();
       const message = parsedList.split("=")[1];
       console.log(message);
-        fs.writeFile("message.txt", message, (err) => {
-          res.statusCode = 302;
-          res.setHeader("Location", "/");
-          return res.end();
+      fs.writeFile("message.txt", message, (err) => {
+        res.statusCode = 302;
+        res.setHeader("Location", "/");
+        return res.end();
+      });
     });
   }
   res.setHeader("Content-Type", "text/html");
