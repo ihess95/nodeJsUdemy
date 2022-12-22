@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ihess95/nodeJsUdemy/issues"
   },
-  "homepage": "https://github.com/ihess95/nodeJsUdemy#readme"
+  "homepage": "https://github.com/ihess95/nodeJsUdemy#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
