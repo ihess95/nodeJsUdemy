@@ -1,6 +1,9 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 
-const app = express();
+const app = express(bodyParser.urlencoded({ extended: false }));
+
+app.use();
 
 app.use("/", (req, res, next) => {
   next();
